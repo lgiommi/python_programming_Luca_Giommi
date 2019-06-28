@@ -40,11 +40,7 @@ def viterbi(HMMT,HMMG,seq):
     Pi.reverse()
 
     print("The Viterbi matrix that contains both the probabilities and the states is:")
-    for key in V:
-        result=[]
-        for elem in V[key]:
-            result.append(elem)
-        print("{}:{}".format(key,result))
+    print(V)
     print("The sequence and the related states are:")
     print(S)
     print(Pi)
